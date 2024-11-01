@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: 19px;
+    background: linear-gradient(to bottom right, lightblue, lightcoral);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full height of the viewport */
+    padding: 30px 20px; /* Add space at top and bottom */
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 550px; /* Increased width for larger input area */
+    margin: 15px 0; /* Add margin to avoid container sticking to top/bottom */
+    max-width: 90vw; /* Ensures responsiveness */
+    margin: 0 auto; /* Center horizontally */
+    max-height: 900px; /* Avoid it stretching too tall */
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, select, button {
+    margin-top: 10px;
+    font-size: 17px;
+    padding: 15px; /* Increased padding for larger fields */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 150px;
+    padding: 15px 0px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: lightcoral;
+}
+
+.scoreboard {
+    margin-top: 18px;
+    position: relative; /* Add position relative to scoreboard */
+}
+
+.exit-button {
+    position: absolute;
+    top: -173px; /* Adjusted position for exit button */
+    right: -8px; /* Adjusted position for exit button */
+    border: none;
+    background-color: red; /* Background color for the exit button */
+    color: white;
+    border-radius: 50%; /* Makes the button circular */
+    width: 50px; /* Increased width of the circular button */
+    height: 50px; /* Increased height of the circular button */
+    cursor: pointer;
+}
+
+.exit-button:hover {
+    background-color: darkred; /* Darker shade on hover */
+}
+
+.box {
+    width: 135px; /* Increased box size for better visibility */
+    height: 135px; /* Increased box size for better visibility */
+    background-color: lightgray;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.box:hover {
+    background-color: lightskyblue;
+}
+.notification {
+    position: fixed; /* Fix position to cover the whole screen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 10; /* Ensure it appears above other elements */
+}
+
+.notification p {
+    font-size: 80px;
+    margin-bottom: 30px;
+}
+
+.notification button {
+    padding: 23px 30px;
+    font-size: 17px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.notification button:hover {
+    background-color: lightcoral;
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+}
+
+.top {
+    border-bottom: 2px solid #333;
+}
+
+.bottom {
+    border-top: 2px solid #333;
+}
+
+.left {
+    border-right: 2px solid #333;
+}
+
+.right {
+    border-left: 2px solid #333;
+}
